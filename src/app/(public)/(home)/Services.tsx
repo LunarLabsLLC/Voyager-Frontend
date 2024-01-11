@@ -1,4 +1,3 @@
-'use client';
 import { Url } from "next/dist/shared/lib/router/router";
 import { FaInfinity, FaTerminal, FaDiscord } from "react-icons/fa";
 import { DiDocker } from "react-icons/di";
@@ -6,6 +5,7 @@ import { InView } from "react-intersection-observer";
 import { SiNextdotjs } from "react-icons/si";
 import { LuFileTerminal } from "react-icons/lu";
 import HashLink from "@/components/HashLink";
+import { Card } from "@/components/Card";
 
 const Services = () => (
 <<<<<<< HEAD
