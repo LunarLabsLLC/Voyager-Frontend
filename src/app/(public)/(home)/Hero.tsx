@@ -40,8 +40,6 @@ const Hero = () => {
     } else {
       forceScrollTo(currHero);
     }
-  }, []);
-
   useKeyPress('ArrowUp', () => onKeyPress(true));
   useKeyPress('ArrowDown', () => onKeyPress(false));
   useKeyPress('w', () => onKeyPress(true));
@@ -81,3 +79,11 @@ const Hero = () => {
 };
 
 export default Hero;
+  }, []);
+
+  useKeyPress('ArrowUp', () => onKeyPress(true));
+  useKeyPress('ArrowDown', () => onKeyPress(false));
+  useKeyPress('w', () => onKeyPress(true));
+  useKeyPress('s', () => onKeyPress(false));
+
+  const handleArrowClick = () => forceScrollTo(hero.current?.nextSibling as Element);
