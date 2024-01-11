@@ -15,5 +15,5 @@ describe('Question component', () => {
     expect(getByText(answer)).toBeInTheDocument();
   });
 
-  // Add more test cases to cover different scenarios and edge cases
+  // Add test cases to cover different scenarios and edge cases for the Question component
 });
