@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import Question from './Question';
+import { render } from '@testing-library/react';
+import Question from './Question';
 
 describe('Question component', () => {
   it('should render the question and answer', () => {
