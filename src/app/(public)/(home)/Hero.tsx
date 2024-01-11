@@ -1,7 +1,7 @@
 'use client';
-import { useKeyPress } from "@/hooks/useKeyPress";
 import useScrollSnap, { forceScrollTo } from "@/hooks/useScrollSnap";
-import { useCallback, useRef } from "react";
+import useKeyScroll from "@/hooks/useKeyScroll";
+import { useRef } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Hero = () => {
@@ -9,6 +9,7 @@ const Hero = () => {
   const elemInfo = useRef<{ elemAbsTop: number; elemAbsBottom: number; elemCtr: number } | null>(null);
 
   useScrollSnap(hero);
+<<<<<<< HEAD
 
   const onKeyPress = useCallback((isUp: boolean) => {
     const currHero = hero.current;
@@ -48,6 +49,10 @@ const Hero = () => {
 
   const handleArrowClick = () => forceScrollTo(hero.current?.nextSibling as Element);
 
+=======
+  useKeyScroll(hero);
+  
+>>>>>>> origin/main
   return (
     <section ref={hero} id="hero" className="relative flex flex-col gap-8 items-center">
       <div className="absolute inset-0 h-full w-full justify-center bg-grad-filter" style={{ zIndex: 0 }}></div>
@@ -57,7 +62,7 @@ const Hero = () => {
           Expertise.<br />Innovation.<br />Client Focus.<br />Quality of Work.
         </h2>
 
-        <span className="ml-3 flex flex-wrap items-center justify-start logo-rainbow p-0">
+        <span className="ml-3 flex flex-nowrap items-center justify-start logo-rainbow p-0">
           <h1>Pink</h1>
           <h1 className="flex flex-nowrap items-center justify-center">
             Cl<div id="cloudMask" className="mx-0.5 mt-1" />ud.

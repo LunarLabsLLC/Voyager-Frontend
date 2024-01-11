@@ -52,6 +52,7 @@ const Carousel = (props: { items: JSX.Element[] }) => {
         </div>
       </div>
     </div>
+<<<<<<< HEAD
   );
 };
 
@@ -64,3 +65,7 @@ const CarouselItem = (props: { id: string; content: JSX.Element }) => (
 );
 
 export default Portfolio;
+=======
+  </>;
+}
+>>>>>>> origin/main
