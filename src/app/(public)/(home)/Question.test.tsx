@@ -25,6 +25,12 @@ describe('Question', () => {
     fireEvent.click(collapseArrow);
     expect(getByText(answer)).toBeVisible();
   });
+  it('expands the answer when the collapse arrow is clicked alt', () => {
+    const { getByText, getByRole } = render(<Question question={question} answer={answer} />);
+    const collapseArrow = getByRole('checkbox');
+    fireEvent.click(collapseArrow);
+    expect(getByText(answer)).toBeVisible();
+  });
 
   it('collapses the answer when the collapse arrow is clicked twice', () => {
     const { getByTestId, getByText } = render(<Question question={question} answer={answer} />);
@@ -32,5 +38,16 @@ describe('Question', () => {
     fireEvent.click(collapseArrow);
     fireEvent.click(collapseArrow);
     expect(getByText(answer)).not.toBeVisible();
+  });
+
+  it('handles different input values correctly', () => {
+    const question = 'What is your favorite color?';
+    const answer = 'Blue';
+    const { getByText } = render(<Question question={question} answer={answer} />);
+    expect(getByText(answer)).toBeInTheDocument();
+    const newAnswer = 'Red';
+    render(<Question question={question} answer={newAnswer} />);
+    expect(getByText(newAnswer)).toBeInTheDocument();
+    expect(getByText(answer)).not.toBeInTheDocument();
   });
 });
