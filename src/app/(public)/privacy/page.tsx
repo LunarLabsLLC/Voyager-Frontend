@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 export default function Privacy() {
   return (
@@ -19,6 +20,14 @@ export default function Privacy() {
           </p>
           </div>
       </div>
+=======
+import './styles.css';
+
+export default function Privacy() {
+  return (
+    <section className="pt-16">
+      Nothing to see here yet.
+>>>>>>> origin/main
     </section>
   );
 }

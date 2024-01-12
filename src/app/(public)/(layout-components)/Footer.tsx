@@ -12,22 +12,40 @@ const Footer = () => (
           <h6><b>Company</b></h6>
           <HashLink href="/about">About us</HashLink>
           <HashLink href="/contact">Contact</HashLink>
+<<<<<<< HEAD
           <HashLink href="/talent">Careers</HashLink>
           <HashLink href="/presskit">Press Kit</HashLink>
+=======
+          <HashLink href="/careers">Careers</HashLink>
+          <HashLink href="/press">Press Kit</HashLink>
+>>>>>>> origin/main
         </div>
 
         <div className="links flex flex-col">
           <h6><b>Legal</b></h6>
+<<<<<<< HEAD
           <HashLink href="/terms">Terms of Service</HashLink>
           <HashLink href="/privacy">Privacy Policy</HashLink>
           <HashLink href="/cookie">Cookie Policy</HashLink>
           <HashLink href="/tax">Tax Policy</HashLink>
+=======
+          <HashLink href="/terms">Terms of Use</HashLink>
+          <HashLink href="/privacy">Privacy Policy</HashLink>
+          <HashLink href="/cookies">Cookie Policy</HashLink>
+          <HashLink href="/taxes">Tax Policy</HashLink>
+>>>>>>> origin/main
         </div>
 
         <div className="links flex flex-col">
           <h6><b>Services</b></h6>
+<<<<<<< HEAD
           <HashLink href="https://uptime.pinkcloud.studios">Service Status</HashLink>
           <HashLink href="https://billing.pinkcloud.studios">Billing</HashLink>
+=======
+          <HashLink href="/services">All Services</HashLink>
+          <HashLink href="/status">Service Status</HashLink>
+          <HashLink href="/billing">Billing</HashLink>
+>>>>>>> origin/main
         </div>
       </nav>
     </div>
