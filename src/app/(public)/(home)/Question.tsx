@@ -6,7 +6,9 @@ interface QuestionProps {
   answer: string;
 }
 
-const Question: React.FC<QuestionProps> = ({ question, answer }) => {
+const Question = (props: QuestionProps) => {
+  const { question, answer } = props;
+  
   return (
     <div className="relative w-full">
       <InView
