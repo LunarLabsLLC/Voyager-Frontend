@@ -1,7 +1,6 @@
 'use client';
 import React from "react";
-import Question from "src/app/(public)/(home)/Question";
-import { InView } from "react-intersection-observer";
+import Question from "./Question";
 
 const FAQ = () => (
   <section id="faq" className="divisor relative min-h-fit flex flex-col items-center justify-center text-center gap-7 py-32 px-8 sm:px-16 md:px-28 lg:px-36 xl:px-40">
@@ -26,27 +25,6 @@ const FAQ = () => (
       />
     </div>
   </section>
-);
-
-const Question = (props: { question: string; answer: string }) => (
-  <div className="relative w-full">
-    <InView
-      as="div"
-      className="absolute top-0 left-0 h-full w-full"
-      threshold={0.67}
-      initialInView={true}
-      fallbackInView={true}
-      onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}
-    ></InView>
-
-    <div className="collapse collapse-arrow bg-base-300 bg-opacity-65 rounded-lg in-view">
-      <input type="checkbox" />
-      <h6 className="flex items-center collapse-title">{props.question}</h6>
-      <div className="collapse-content flex items-start">
-        <small>{props.answer}</small>
-      </div>
-    </div>
-  </div>
 );
 
 export default FAQ;

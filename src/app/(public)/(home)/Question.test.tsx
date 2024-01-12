@@ -1,7 +1,6 @@
-// src/app/(public)/(home)/Question.test.tsx
-
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Question from './Question';
 
 describe('Question', () => {
@@ -12,6 +11,7 @@ describe('Question', () => {
     const { getByText } = render(<Question question={question} answer={answer} />);
     expect(getByText(question)).toBeInTheDocument();
     expect(getByText(answer)).toBeInTheDocument();
+    expect(getByText(answer)).not.toBeVisible();
   });
 
   it('renders the collapse arrow', () => {
