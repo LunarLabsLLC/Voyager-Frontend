@@ -29,10 +29,10 @@ const Footer = () => (
           <HashLink href="/cookie">Cookie Policy</HashLink>
           <HashLink href="/tax">Tax Policy</HashLink>
 =======
-          <HashLink href="/terms">Terms of Use</HashLink>
+          <HashLink href="/terms">Terms of Service</HashLink>
           <HashLink href="/privacy">Privacy Policy</HashLink>
-          <HashLink href="/cookies">Cookie Policy</HashLink>
-          <HashLink href="/taxes">Tax Policy</HashLink>
+          <HashLink href="/cookie">Cookie Policy</HashLink>
+          <HashLink href="/tax">Tax Policy</HashLink>
 >>>>>>> origin/main
         </div>
 
@@ -42,9 +42,8 @@ const Footer = () => (
           <HashLink href="https://uptime.pinkcloud.studios">Service Status</HashLink>
           <HashLink href="https://billing.pinkcloud.studios">Billing</HashLink>
 =======
-          <HashLink href="/services">All Services</HashLink>
-          <HashLink href="/status">Service Status</HashLink>
-          <HashLink href="/billing">Billing</HashLink>
+          <HashLink href="https://uptime.pinkcloud.studios">Service Status</HashLink>
+          <HashLink href="https://billing.pinkcloud.studios">Billing</HashLink>
 >>>>>>> origin/main
         </div>
       </nav>
@@ -57,3 +56,6 @@ const Footer = () => (
 );
 
 export default Footer;
+      <small className="flex flex-row flex-wrap items-center">Made with<FaHeart className="text-neutral mx-1.5 min-h-3.5 min-w-3.5"/>from NA & SA. &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios LLC.</small>
+      <small className="flex flex-row flex-wrap items-center">Made with<FaHeart className="text-neutral mx-1.5 min-h-3.5 min-w-3.5"/>from NA & SA. &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios LLC.</small>
+      <small className="flex flex-row flex-wrap items-center">Made with<FaHeart className="text-neutral mx-1.5 min-h-3.5 min-w-3.5"/>from NA & SA. &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios LLC.</small>
